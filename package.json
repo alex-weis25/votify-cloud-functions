@@ -1,0 +1,11 @@
+{
+  "name": "votify-cloud-functions",
+  "version": "1.0.0",
+  "description": "api references for votify-mobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
