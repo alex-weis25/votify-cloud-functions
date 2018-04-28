@@ -1,4 +1,4 @@
-const functions = require('firebase-functions');
+const functions = require("firebase-functions");
 let request = require("request");
 let querystring = require("querystring");
 
@@ -9,9 +9,7 @@ let querystring = require("querystring");
 //  response.send("Hello from Firebase!");
 // });
 
-
 exports.login = functions.https.onRequest((req, res) => {
-
   res.redirect(
     "https://accounts.spotify.com/authorize?" +
       querystring.stringify({
@@ -22,5 +20,4 @@ exports.login = functions.https.onRequest((req, res) => {
         redirect_uri
       })
   );
-
-})
+});
