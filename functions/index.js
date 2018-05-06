@@ -27,7 +27,7 @@ exports.login = functions.https.onRequest((req, res) => {
     res.redirect(
       "https://accounts.spotify.com/authorize?" +
         querystring.stringify({
-          response_type: "token",
+          response_type: "token", //code
           client_id: secrets.SPOTIFY_CLIENT_ID,
           scope:
             "user-read-private user-read-email playlist-modify-public playlist-read-collaborative playlist-read-private playlist-modify-private user-read-currently-playing",
